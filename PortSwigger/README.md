@@ -1,6 +1,7 @@
 **PortSwigger Web Security Academy**
 
 **Path Traversal DDOC:** Learning & understanding how to read Arbitrary files. So far ive learned that when a URL pulls up an img it will pull the image from /var/www/123.png filepath. Now an attacker can manipulate the URL wit /etc/passwd to request what they want i.e passwd. Now using the sequence `../` is valid within a filepath because it tells the filepath to step up one level. So putting 3 of those `../` sequences steps up from var/www/123.png to filesystem root and it will then read only etc/passwd.
+
 **LAB Conclusion:** (I cant show the work but i will explain how ive completed the module) So when I got in the lab I was honestly lost at what to do. Then I kept reading the objective over and over and it clicked, I had to change the img path to solve the lab. So after 15 maybe 20 mins of looking at burpsuit and seeing nothing, ive decided to open the image of the product in a new tab and thats where I intercepted https://0ad2008a03381c8c806cd65300e30007.web-security-academy.net/image?filename=53.jpg and changed the filename to filename=../../../etc/passwd and solved the lab. **COMPLETE✅**
 
 **Access Control DOC::** Learning & understanding access control. Access control is basically a constraint on the web app to keep out people that dont have access to controls they shouldnt like deleting a record of an employee, or changing file names in the system. Now there are 2 types of access control.
