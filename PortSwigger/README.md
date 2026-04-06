@@ -22,4 +22,8 @@
  **2. Horizontal Privilage Definition (The Tight Rope)** Horizontal Privilage is when I or an employee gain access to another users resorces as                                                         my own. Horizontal Privilage may use the same exploitation as Vertical Privilage. They                                                          could change the value of userid=123 and gain access to the employee data and                                                                   functions. That is an example of whats called Insecure direct object reference (IDOR)                                                           vulnerability.
  **The LAB:** For this LAB, it took me a loooong time. but I figured it out. I knew I had to get carlos's API to solve the LAB but I didnt know               how to get into his account. I was looking threw the posts hoping I would find a comment about him not knowing I had to find a                  post from him. I then figured that out, went to his profile grabed his userid intercepted the log in traffic swapped my id with                 his and boom kanani! Found his API key and solved the LAB. **COMPLETE✅**
 
- **Horizontal to Vertical Privilage Escalation:** H To V Escalation is gaining admin privilage from a more trusted sorce 
+ **Horizontal to Vertical Privilage Escalation:** H To V Escalation is gaining admin access by compromising a more privileged user
+
+ **The LAB:** Ok it took a while for me to solve this but I think im understanding the hacker mind set now. Its becoming a slow process but its               happening. For this lab I had to log in as wiener and change my user name to administrator. It then showed me the admins passwd                 but hidden. I then went into inspector mode and went over to the passwd line and seen what it was. I copied it then logged out                  and logged in as admin, I tossed his passwd gained access and deleted carlos. **COMPLETE✅**
+
+ 
