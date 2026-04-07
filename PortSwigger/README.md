@@ -1,4 +1,4 @@
-**PortSwigger Web Security Academy**
+**PortSwigger Web Security Academy PG1**
 
 **Path Traversal DDOC:** Learning & understanding how to read Arbitrary files. So far ive learned that when a URL pulls up an img it will pull the image from /var/www/123.png filepath. Now an attacker can manipulate the URL wit /etc/passwd to request what they want i.e passwd. Now using the sequence `../` is valid within a filepath because it tells the filepath to step up one level. So putting 3 of those `../` sequences steps up from var/www/123.png to filesystem root and it will then read only etc/passwd.
 
@@ -25,5 +25,3 @@
  **Horizontal to Vertical Privilage Escalation:** H To V Escalation is gaining admin access by compromising a more privileged user
 
  **The LAB:** Ok it took a while for me to solve this but I think im understanding the hacker mind set now. Its becoming a slow process but its               happening. For this lab I had to log in as wiener and change my user name to administrator. It then showed me the admins passwd                 but hidden. I then went into inspector mode and went over to the passwd line and seen what it was. I copied it then logged out                  and logged in as admin, I tossed his passwd gained access and deleted carlos. **COMPLETE✅**
-
- 
